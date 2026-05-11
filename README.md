@@ -2,9 +2,21 @@
 hackaton dqlab
 
 ## Petunjuk Penggunaan Terakhir:
-Pastikan library mlxtend dan openpyxl sudah terinstall (pip install mlxtend openpyxl).
-Sesuai instruksi soal, sangat penting untuk memodifikasi pengaturan warna/garis pada bagian plt.plot() dengan baris kode persis yang diberikan panitia pada file snippet_code_matplotlib.py
-. Saya telah menyematkan styling dasar dengan warna kuning (#FFD700) dan abu-abu putus-putus (#A9A9A9) yang secara logika mirip dengan spesifikasi di PDF
+Pastikan dependensi Python berikut sudah terinstall sebelum menjalankan `solusi-retail.py`:
+
+- pandas
+- matplotlib
+- mlxtend
+- openpyxl
+
+Anda dapat memasang semua dependensi dengan perintah berikut:
+
+```bash
+pip install pandas matplotlib mlxtend openpyxl
+```
+
+Sesuai instruksi soal, sangat penting untuk memodifikasi pengaturan warna/garis pada bagian `plt.plot()` dengan baris kode persis yang diberikan panitia pada file `snippet_code_matplotlib.py`.
+Saya telah menyematkan styling dasar dengan warna kuning (#FFD700) dan abu-abu putus-putus (#A9A9A9) yang secara logika mirip dengan spesifikasi di PDF
 , namun menempelkan cuplikan resmi dari panitia akan menjamin Anda mendapatkan poin penuh.
 Jalankan skrip ini melalui terminal dengan perintah: python solusi-retail.py
 
