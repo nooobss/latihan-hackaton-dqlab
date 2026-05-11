@@ -1,5 +1,5 @@
 # latihan-hackaton-dqlab
-hackaton dqlab
+credit to : dqlab.id X ujikompetensi.com
 
 ## Petunjuk Penggunaan Terakhir:
 Pastikan dependensi Python berikut sudah terinstall sebelum menjalankan `solusi-retail.py`:
