@@ -51,7 +51,7 @@ def main():
         data_sesi = tren_naik[(tren_naik['kode_produk'] == kode) & (tren_naik['grup_tren'] == grup)]
         
         ma_akhir = data_sesi['MA_3'].iloc[-1]
-        ma_awal = data_sesi['MA_prev'].iloc
+        ma_awal = data_sesi['MA_prev'].iloc[0]
         growth_pct = ((ma_akhir / ma_awal) - 1) * 100
         
         total_sales = df[df['kode_produk'] == kode]['total_nilai'].sum()
@@ -71,7 +71,7 @@ def main():
     # ==========================================
     # 1. Membentuk Matriks Keranjang
     basket = df.groupby(['nomor_struk', 'nama_produk'])['jumlah_terjual'].sum().unstack().fillna(0)
-    basket_sets = basket.applymap(lambda x: 1 if x > 0 else 0)
+    basket_sets = (basket > 0).astype(int)
     
     # 2. Algoritma Apriori & Association Rules
     frequent_itemsets = apriori(basket_sets, min_support=0.01, use_colnames=True)
