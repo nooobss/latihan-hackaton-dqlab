@@ -1,2 +1,14 @@
 # latihan-hackaton-dqlab
 hackaton dqlab
+
+## Petunjuk Penggunaan Terakhir:
+Pastikan library mlxtend dan openpyxl sudah terinstall (pip install mlxtend openpyxl).
+Sesuai instruksi soal, sangat penting untuk memodifikasi pengaturan warna/garis pada bagian plt.plot() dengan baris kode persis yang diberikan panitia pada file snippet_code_matplotlib.py
+. Saya telah menyematkan styling dasar dengan warna kuning (#FFD700) dan abu-abu putus-putus (#A9A9A9) yang secara logika mirip dengan spesifikasi di PDF
+, namun menempelkan cuplikan resmi dari panitia akan menjamin Anda mendapatkan poin penuh.
+Jalankan skrip ini melalui terminal dengan perintah: python solusi-retail.py
+
+Berikut adalah skrip lengkap solusi-retail.py yang menggabungkan seluruh tahapan dari awal hingga akhir. Anda dapat menyalin kode ini, menyimpannya sebagai file solusi-retail.py, lalu menjalankannya untuk menghasilkan ketiga file yang diminta pada soal
+.
+
+Catatan: Sesuai petunjuk soal, pastikan Anda menempatkan file dataset (data_penjualan.csv atau data_penjualan.xlsx) dan snippet_code_matplotlib.py di folder yang sama dengan skrip ini sebelum dijalankan.
